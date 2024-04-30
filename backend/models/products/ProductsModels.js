@@ -1,0 +1,102 @@
+const mongoose = require('mongoose');
+const productSchema = new mongoose.Schema({
+    name:{
+        type:String,
+        required:true,
+        trim:true
+    },
+    price:{
+        type:Number,
+        required:true, 
+    },
+    oldPrice:{
+      type:Number,
+      default:0
+    },
+    offer:{
+        type:Number,
+        default:0
+    },
+    description:{
+        type:String,
+        required:true
+    },
+    ratings:{
+        type:Number,
+        default:0
+    },
+    stock:{
+        type:Number,
+        default:1
+    },
+    colors:[
+        {
+        type:String,
+        }
+    ],
+    sizes:[
+        {
+        type:String,
+        }
+    ],
+    height:{
+        type:Number,
+        default:0
+    },
+    width:{
+        type:Number,
+        default:0
+    },
+    numOfReview:{
+        type:Number,
+        default:0
+    },
+    reviews:[
+        {
+        name:{
+           type:String,
+           required:true
+        },
+        email:{
+            type:String,
+            required:true
+        },
+        user:{
+            type:mongoose.Schema.ObjectId,
+            ref:'Users'
+        },
+        avatar:{
+            type:String,
+            default:'https://img.freepik.com/premium-vector/handsome-businessman-suit_88465-811.jpg?size=626&ext=jpg&ga=GA1.1.1291529831.1679838217&semt=ais'
+        },
+        rating:{
+            type:Number,
+            default:0
+        },
+        quantity:{
+            type:Number,
+            default:0
+        },
+        comment:{
+            type:String,
+            required:true
+        }
+    }
+    ],
+ productImages:[{
+    image:{
+       type:String,
+       required:true
+    }
+}],
+category:{
+    type:mongoose.Schema.ObjectId,
+    ref:'Categories'
+},
+user:{
+    type:mongoose.Schema.ObjectId,
+    ref:'Users'
+},
+},{timestamps:true})
+
+module.exports = mongoose.model('Products',productSchema)

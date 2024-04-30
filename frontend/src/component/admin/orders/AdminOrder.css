@@ -1,0 +1,24 @@
+.orders__container{
+    background-color: rgb(13, 12, 117);
+    max-height: 200vw;
+}
+.orders__table__section{
+   margin-top: 100px; 
+   background-color: white;
+}
+.btn{
+    padding: 5px;
+    margin: 3px;
+    box-shadow: 0 0 5px black;
+}
+.btn3{
+    background-color: red;
+}
+.btn2{
+    background-color: rgb(7, 165, 238);
+}
+.btn1{
+    background-color: rgb(22, 4, 90);
+    color: white;
+    border-radius: 5px;
+}

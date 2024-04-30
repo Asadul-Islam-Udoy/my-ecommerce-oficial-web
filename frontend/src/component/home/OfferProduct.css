@@ -1,0 +1,199 @@
+.offer__container{
+    width: 98vw;
+    margin: 0px;
+}
+.offer__box{
+position: relative;
+width: 100%;
+margin: 5px;
+
+}
+.offer__images__section{
+width: 100%;
+display: inline-block;
+align-items: center;
+justify-content: center;
+padding: 10px;
+
+}
+.offer__images{
+ display: inline-block;
+ background-color: white;
+ width: 251px; 
+ height: 415px;
+ margin: 2px 3px ;
+ border-radius: 4px;
+ flex-direction: column;
+ margin-left: 9px;
+ margin-top: 3px;
+}
+.offer__images:hover{
+    border: 1px solid white;
+ }
+.offer__persen__section{
+ position: absolute;
+ z-index: 2;
+ color: red;
+ text-align: center;
+ width: 50px;
+ font-weight: bold;
+ margin-top: -16px;
+}
+.offer__persen__section>p{
+    font-weight: 900;
+    background-color: rgb(249, 253, 23);
+    padding: 5px;
+    border-radius: 2px;
+    margin-top: 16px;
+   }
+.offer__images>img{
+    width: 251px; 
+    height: 230px;
+    border-top-right-radius: 5px; 
+    border-top-left-radius: 5px; 
+    transition: 0.5s all ease;
+
+   
+}
+.visible1{
+    animation: fide_id 1s linear;
+  }
+  @keyframes fide_id{
+     from{
+        opacity: 0;
+        /* scale: 0.8; */
+     }
+     to{
+        opacity: 1;
+        /* scale:1; */
+     }
+  }
+.offer__button{
+  width: 100vw;
+  position: absolute;
+  margin-top: -250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.offer__button>p:nth-of-type(2){
+ margin-right: 25px; 
+ background-color: white;
+ height: 50px;
+ width: 50px;
+ border-radius: 50%;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+
+
+}
+.offer__button>p:nth-of-type(1){
+    margin-left: 10px; 
+    background-color: white;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.name__section{
+ padding-bottom: 5px; 
+ margin: 10px;  
+}
+.name__section>span{
+ font-weight: 400;
+ margin-bottom: 4px;
+}
+.name__section>div{
+   display: flex;
+   align-items: center;
+}
+.name__section>div:nth-of-type(2){
+    margin-top: -0px;
+}
+.name__section>div:nth-of-type(3){
+    margin-top: -20px;
+}
+.name__section>div:nth-of-type(1)>span:nth-of-type(1){
+    color: rgb(9, 10, 51);
+    font-weight: 400;
+}
+.name__section>div:nth-of-type(2)>span:nth-of-type(1){
+    font-size: 18px;
+    color: rgb(248, 16, 47);
+    font-weight: bold;
+}
+.name__section>div:nth-of-type(2)>span:nth-of-type(2){
+    font-size: 14px;
+    margin-left: 4px;
+    text-decoration: line-through;
+    color: gray;
+}
+.name__section>div:nth-of-type(3)>span:nth-of-type(1){
+    font-size: 40px;
+    color: rgb(248, 148, 16);
+}
+.name__section>div:nth-of-type(3)>span:nth-of-type(2){
+    font-size: 12px;
+    margin-top: -10px;
+}
+
+@media(max-width:600px){
+    .offer__container{
+        width: 95%;
+        margin: 0px;
+    }
+    .offer__images__section{
+        width: 100%;
+        display: inline-block;
+        align-items: center;
+        justify-content: center;
+        overflow: scroll;
+        padding: 10px;
+        margin-left: 0px;
+        } 
+        .offer__images{
+            display: inline-block;
+            background-color: white;
+            width: 200px; 
+            height: 385px;
+            margin: 2px 2px ;
+            border-radius: 4px;
+            flex-direction: column;
+            margin-left: 9px;
+            margin-top: 3px;
+           }
+           .offer__images>img{
+            width: 200px; 
+            height: 230px;
+            border-top-right-radius: 5px; 
+            border-top-left-radius: 5px; 
+            transition: 0.5s all ease;
+        
+           
+        }
+}
+@media(max-width:400px) and (min-width:345px){
+    .offer__images{
+        display: inline-block;
+        background-color: white;
+        width: 288px; 
+        height: 425px;
+        margin: 2px 3px ;
+        border-radius: 4px;
+        flex-direction: column;
+        margin-left: 9px;
+        margin-top: 3px;
+       }
+       .offer__images>img{
+        width: 288px; 
+        height: 240px;
+        border-top-right-radius: 5px; 
+        border-top-left-radius: 5px; 
+        transition: 0.5s all ease;
+    
+       
+    }
+    }

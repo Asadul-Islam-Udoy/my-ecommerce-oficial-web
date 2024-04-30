@@ -1,0 +1,119 @@
+.paroduct__category__container {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  background-color: rgb(238, 238, 238);
+}
+.no__category__products {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+
+}
+.no__category__products >h2{
+ color: white;
+ font-style: italic;
+ opacity: 0.4;
+  }
+  .no__category__icon{
+   color: red;
+   font-size: 30px !important;
+   
+  }
+  .no__category__left__icon{
+    font-size: 18px !important;
+    color: rgb(18, 94, 235);
+    cursor: pointer;
+  }
+.paroduct__category__container > div {
+  margin-left: 6px;
+  margin-top: 5px;
+}
+.category__left {
+}
+.price__range {
+  height: 100px;
+  width: 100%;
+}
+.price__range > p {
+  color: rgb(31, 3, 82);
+  text-align: center;
+  font-weight: bold;
+}
+.price__range > div {
+  border: 1px solid white;
+  padding: 3px;
+  background-color: white;
+  margin: 5px;
+  border-radius: 3px;
+}
+.product__category__section > div {
+  display: inline-block;
+  flex-direction: row;
+}
+.product__category__section > div {
+  background-color: white;
+  height: 400px;
+  width: 220px;
+  margin: 5px;
+  overflow: hidden;
+  border-radius: 4px;
+}
+.product__category__section > div > div > a > img {
+  height: 210px;
+  object-fit: cover;
+  width: 220px;
+}
+.product__category__section > div > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 4px;
+}
+.product__category__section > div > div > div > p:nth-of-type(1) {
+  font-weight: 500;
+}
+.product__category__section > div > div > div > span {
+  font-size: 45px;
+  margin-top: -10px;
+  color: rgb(255, 171, 16);
+}
+
+.category__price {
+  margin-top: -29px;
+  display: flex;
+  align-items: center;
+}
+.price__section {
+  font-weight: 900;
+  margin: 5px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.category__price > p:nth-of-type(2) {
+  font-size: 12px;
+  text-decoration: line-through;
+  margin-top: 30px;
+}
+/* pagination */
+
+.pagination__section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(12, 3, 37);
+  padding: 5px;
+}
+.pagination__section > span {
+  color: white;
+  border: 2px solid white;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}

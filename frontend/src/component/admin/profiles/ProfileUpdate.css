@@ -1,0 +1,52 @@
+.create__froms{
+    padding: 10px;
+}
+.create__froms>div{
+ display: flex;
+}
+.create__froms>div>div>label{
+    padding: 5px;
+    margin: 10px;
+  }
+.create__froms>div>div>input{
+  padding: 5px;
+  margin: 10px;
+}
+.profile__update__btn{
+    padding: 5px;
+    width: 30%;
+    margin: 10px;
+}
+.show__image{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin: 10px;
+  }
+.show__image>div>img{
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media(max-width:700px){
+    .create__froms>div{
+        display: block;
+    }
+    .create__froms>div>div{
+        display: flex;
+        flex-direction: column;
+      }
+    .create__froms>div>div>label{
+        margin: 2px;
+      }
+    .create__froms>div>div>input{
+      padding: 5px;
+      margin: 2px;
+    }
+    .profile__update__btn{
+        margin-top: -50px;
+    }
+    
+}

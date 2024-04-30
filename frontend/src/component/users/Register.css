@@ -1,0 +1,92 @@
+.register__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+}
+.register__box{
+background-color: rgb(74, 167, 255);
+display: flex;
+flex-direction: column;
+align-items: center;
+border-radius: 6px;
+padding: 20px;
+}
+@keyframes register_image_header{
+    0%{
+     opacity: 0.9;
+     transform: translateY(-40px);
+    }
+    25%{
+      opacity:0.7 ;
+    }
+    50%{
+      opacity: 0.9;
+    }
+    100%{
+      opacity: 0.9;
+      color: red;
+    }
+  }
+.register__box>img{
+ width: 70%;
+ margin-top: 10px;
+ animation:register_image_header 5s linear 2s infinite alternate;
+}
+
+.register__from{
+    padding: 20px;
+}
+.register__from>div{
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.register__icon{
+    position: absolute;
+    margin-left: 3px;
+    color: pink;
+}
+.register__from>div>div{
+   display: flex;
+   align-items: center;
+ 
+}
+.register__from>div>label{
+  font-size: 15px;
+  font-weight: bold;
+  padding: 4px;
+  color: white;
+}
+.register__from>div>div>input{
+ padding: 7px 25px;
+ width: 95%;
+ background-color: transparent;
+}
+.register__from>div>div>input:focus{
+outline: none;
+}
+.register__from>button{
+   border: none;
+   padding: 6px;
+   margin: 10px;
+   width: 50%;
+   font-weight: bold;
+   border-radius: 3px;
+   cursor: pointer;
+
+}
+.forget__section{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.forget__section>a{
+ font-size: 14px;
+ font-style: italic;
+}
+.forget__key{
+    font-size: 20px !important;
+    rotate: -30deg;
+}

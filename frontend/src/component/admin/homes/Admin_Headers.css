@@ -1,0 +1,101 @@
+.headers__container{
+    width: 100%;
+    height: 20px;
+   
+}
+.herders__box{
+background-color: rgb(1, 5, 22);
+color: white;
+display: flex;
+justify-content: space-between;
+padding: 10px;
+align-items: center;
+position: fixed;
+width: 100%;
+z-index: 99;
+}
+.herders__box>img{
+height: 60px;
+width: 60px;
+border-radius: 50%;
+cursor: pointer;
+}
+.herders__box>span{
+  font-weight: 900;
+  margin-left: 100px;
+}
+.headers__right__side{
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+}
+.headers__right__side>button{
+ margin: 10px;
+ padding: 7px 30px;
+ font-weight: bold;
+ background-color: rgb(5, 164, 238);
+ border: none;
+ border-radius: 50%;
+ color: rgb(236, 10, 10);
+}
+.admin__profile{
+ margin-right: 50px;
+}
+.admin__profile>img{
+    margin-left: 30px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.profile__box{
+    padding: 4px;
+    background-color: rgb(10, 1, 43);
+    height: 100px;
+    width: 100px;
+    color: rgb(224, 216, 216);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    margin-left: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px black;
+    margin-top: -2px;
+}
+.profile__box>li{
+ margin-left: 3px;  
+ width: 95%;
+ color: rgb(209, 221, 223);
+ margin-top: 5px;
+ padding: 3px 0px;
+ list-style: none;
+ text-align: center;
+ transition: all 0.5s;
+ font-style: italic;
+ font-weight: 400;
+ display: flex;
+ align-items: center;
+ cursor: pointer;
+}
+.profile__box>li:hover{ 
+    background-color: rgb(226, 178, 19);
+    border-radius: 2px;  
+}
+@media(max-width:600px){
+    .herders__box>span{
+        font-weight: 900;
+        margin-left: 20px;
+        font-size: 14px;
+      }
+    .headers__right__side>button{
+        margin: 10px;
+        padding: 4px 10px;
+        font-weight: bold;
+        background-color: rgb(5, 164, 238);
+        border: none;
+        border-radius: 50%;
+       }  
+}

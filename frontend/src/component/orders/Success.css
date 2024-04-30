@@ -1,0 +1,21 @@
+.payment__seccess__container{
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.payment__seccess__container>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.success__icon{
+    color: rgb(0, 238, 32);
+    font-size: 100px !important;
+}
+.payment__seccess__container>div>h3{
+    color: white;
+    font-weight:  bold;
+    font-size: 30px;
+}

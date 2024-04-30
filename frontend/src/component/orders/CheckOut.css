@@ -1,0 +1,202 @@
+.checkout__container{
+    width: 100%;
+    padding-top: 60px;
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 0.5rf 5rf;
+    color: white;
+}
+.checkout__container>div{
+    width: 98%;
+    padding-top: 10px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    min-height: 100vh;
+}
+.checkout__container>div>div:nth-of-type(2){
+    margin: 10px;
+    display: grid;
+    grid-template-columns: 5fr 2fr;
+    min-height: 100vh;
+}
+.checkout__section{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: white;
+    border-radius: 5px;
+    height: 70px;
+}
+.checkout__section>div{
+display: flex;
+align-items: center;
+flex-direction: column;
+}
+.checkout__section>div>p:nth-of-type(2){
+   margin-top: -15px;
+}
+.checkout__box__1{
+    align-items: center;
+    margin: 10px;
+    height: 500px;
+    overflow: scroll;
+}
+.checkout__box__1>div{
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 10px;
+background-color: white;
+border-radius: 4px;
+box-shadow:  0 0 5px black;
+}
+.checkout__box__1>div>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 10px;
+
+    }
+.checkout__box__1>div>div>img{
+height: 70px;
+width: 100px;
+object-fit: cover;
+}
+.checkout__box__1>div>p{
+    margin: 10px;
+    padding: 5px;
+ }
+.checkout__box__1>div>span:nth-of-type(4){
+    margin: 10px;
+ }
+ .checkout__delete__product{
+    cursor: pointer;
+    transition: all 0.5s;
+ }
+ .checkout__delete__product:hover{
+   background-color: rgb(227, 236, 235);
+   height: 30px;
+   width: 30px;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ }
+ .quantity__section__checkout{
+    display: flex;
+    padding: 10px;
+ }
+.quantity__section__checkout>button{
+ padding: 5px 10px;
+ border: none;
+ font-weight: bold;
+ }
+ .quantity__section__checkout>div>input{
+    padding: 5px 10px;
+    width: 20px;
+    border: none;
+    text-align: center;
+    font-weight: bold;
+}
+.quantity__section__checkout>div>input:focus{
+  outline: none;
+}
+.checkout__box__2{
+    margin: 20px;
+}
+.checkout__box__2>div{
+ display: flex;  
+ background-color: white;
+ justify-content: space-around;
+ align-items: center;
+ text-align: center;
+ padding: 10px;
+ border-radius: 2px;
+
+}
+.checkout__box__2>div>div>span{
+   font-weight: bold;
+}
+.checkout__box__2>div>button{
+  padding: 6px 50px;
+  background-color: rgb(255, 198, 10);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 2px;
+  transition: all 0.5s;
+}
+.size__width{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    background-color: rgb(190, 200, 209);
+    border-radius: 4px;
+    box-shadow: 0 0 2px black;
+}
+.size__width>div>div{
+  display: flex;
+  justify-content: space-between;
+ }
+.size__width>div>div>span{
+   margin-right: 10px;
+}
+.checkout__box__2>div>button:hover{
+background-color: red;
+  }
+  /* no cart item */
+.no__cartItem_section{
+    margin-top: 10px;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.no__cartItem_section>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.no__item__icon{
+    color: red;
+    font-size: 80px !important;
+}
+.no__cartItem_section>div>p{
+color: white;
+font-weight: bold;
+font-size: 20px;
+}
+.no__cartItem_section>div>a>button{
+  padding: 7px 40px;
+  border: none;
+  font-weight: bold;
+  border-radius: 4px;
+  background-color: tomato;
+  color: white;
+}
+.no__cartItem_section>div>a>button:hover{
+    background-color: rgb(218, 37, 5);
+}
+@media(max-width:600px){
+    .checkout__container{
+        grid-template-columns: 1rf;
+    }
+    .checkout__container>div>div:nth-of-type(2){
+        grid-template-columns: 1fr;
+    }
+    .checkout__box__1>div{
+        flex-direction: column;
+    }
+    .size__width{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        background-color: rgb(190, 200, 209);
+        border-radius: 4px;
+        box-shadow: 0 0 2px black;
+    }
+ 
+}

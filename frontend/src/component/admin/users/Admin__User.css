@@ -1,0 +1,26 @@
+.user__table__section{
+    position: absolute;
+    top:100px;
+    width: 100vw;
+}
+.css-ptkaw2-MuiDataGrid-root .MuiDataGrid-cellContent {
+    color: #1c0854;
+  }
+  .delete__button{
+    padding: 5px 10px;
+    background-color: red;
+  }
+  .permission__section{
+    padding: 5px 10px;
+    background-color: rgb(17, 99, 175);
+    color: white;
+    margin: 10px;
+  }
+  @media(max-width:600px){
+    .user__table__section{
+        position: absolute;
+        top:100px;
+        width: 250vw;
+        height: 100vh;
+    }
+  }

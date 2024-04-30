@@ -1,0 +1,23 @@
+.modal__banner__box{
+    width: 50vw;
+}
+.create__banner__from>div>div{
+  display: flex;
+  flex-direction: column;
+}
+.create__banner__from>div>div{
+    padding: 10px;
+    width: 100%;
+}
+.create__banner__from>div>div>button{
+    padding: 5px 10px;
+}
+.showImage>div{
+    width: 100%;
+    overflow: scroll;
+    display: flex;
+}
+.showImage>div>div>img{
+   height: 70px;
+   width: 100px;
+}

@@ -1,0 +1,44 @@
+.sidebar__container{
+    width: 20%;
+    height: 90vh;
+}
+.sidebar__box{
+    color: white;
+    background-color: black;
+    height: 90vh;
+    position: fixed;
+    padding-left: 30px;
+    transition: 1500s;
+    transition: all 0.5s ease;
+    z-index: 99;
+}
+.sidebar__box>p{
+ padding: 10px;
+ display: flex;
+ align-items: center;
+ font-size: 20px;
+ font-weight: bold;
+ margin-right: 30px;
+}
+.dashboard__icon{
+    color: red;
+    font-size: 35px;
+}
+.sidebar__list{
+ padding: 10px;
+ display: flex;
+ flex-direction: column;
+}
+.sidebar__list>li{
+    padding: 10px;
+    list-style: none;
+    background-color: rgb(12, 12, 109);
+    margin: 7px;
+    border-radius: 4px;
+    transition: all 0.5s;
+    display: flex;
+    align-items: center;
+}
+.sidebar__list>li:hover{
+    background-color: rgb(16, 16, 156);
+}
