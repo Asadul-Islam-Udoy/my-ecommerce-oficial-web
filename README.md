@@ -25,7 +25,8 @@ npm start
 
 # Tech Stack
 
-ReactJS
+React.js
+Redux.js
 Node.js
 Express.js
 ui-Router
